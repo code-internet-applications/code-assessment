@@ -26,13 +26,17 @@
     box-sizing: border-box;
     // padding left/right given to avoid overlap with the "swiper navigation arrows"
     padding-block: 0 rem(100);
+    padding-top: 6.25rem;
+
     @include mqmin($bp-md) {
       padding-block: 0 rem(102);
+      padding-top: 6.25rem;
       max-width: var(--site-center-narrow);
     }
     &.has-navigation {
       padding-left: 4rem;
       padding-right: 4rem;
+      
     }
   }
   &__heading,
