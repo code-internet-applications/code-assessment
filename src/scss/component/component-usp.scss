@@ -16,6 +16,9 @@
     @include mqmin($bp-xxl) {
       padding-inline: var(--site-side-spacing-xxl);
     }
+    @include mqmax($bp-md) {
+      grid-template-columns: repeat(1, auto);
+    }
   }
   &__title {
     margin-bottom: 0;
