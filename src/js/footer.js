@@ -6,6 +6,10 @@ class CollapsibleFooter extends Collapsible {
     }
     this.windowWidth = window.innerWidth;
     this.displayDetails();
+    this.addEventListener('click', (e) => {
+      e.preventDefault();
+      this.toggle();
+    });
   }
 
   construct() {
@@ -19,14 +23,20 @@ class CollapsibleFooter extends Collapsible {
       this.displayDetails();
     });
   }
-
+  toggle() {
+    this.classList.toggle("footer-open");
+    this.querySelector(".level-2").classList.toggle("footer-open");
+    this.querySelector("svg").classList.toggle("footer-open");
+  }
   open(group) {
+    console.log("open");
     if (window.innerWidth < this.options.breakpoint) {
       super.open(group);
     }
   }
 
   close(group) {
+    console.log("close");
     if (window.innerWidth < this.options.breakpoint) {
       super.close(group);
     }
