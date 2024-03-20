@@ -38,3 +38,5 @@ The assignments below describes what needs to be implemented. Don't be afraid to
 ![Desktop design](https://raw.githubusercontent.com/codeinternetapplications/code-assessment/main/assessment-desktop.png)
 
 **Good luck and have fun!**
+
+Test
