@@ -1,4 +1,4 @@
-@use '../mixins' as *;
+@use "../mixins" as *;
 
 .hero-slider {
   position: relative;
@@ -47,6 +47,7 @@
     &--white {
       color: var(--color-white);
     }
+    
   }
   &__heading {
     margin-bottom: rem(40);
@@ -68,7 +69,7 @@
     }
   }
   &__text {
-    @include font-variant('regular');
+    @include font-variant("regular");
   }
   &__buttons {
     margin-top: rem(30);
@@ -153,5 +154,45 @@
         opacity: 20%;
       }
     }
+  }
+}
+
+
+.slider-heading {
+  font-size: 2rem;
+  line-height: 2rem;
+  @media screen and (min-width: 768px) {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  @media screen and (min-width: 1040px) {
+    font-size: 5rem;
+  }
+  @media screen and (min-width: 1300px) {
+    font-size: 6rem;
+  }
+}
+
+.custom-subheading {
+  font-size: 1rem;
+  line-height: 1rem;
+  @media screen and (min-width: 768px) {
+    font-size: 1.5rem;
+    line-height: 3rem;
+
+  }
+  @media screen and (min-width: 1040px) {
+    font-size: 2rem;
+  }
+  @media screen and (min-width: 1300px) {
+    font-size: 2.5rem;
+  }
+}
+
+.custom-button {
+  font-size: 1rem;
+  line-height: 1rem;
+  @media screen and (min-width: 768px) {
+    font-size: 1.5rem;
   }
 }

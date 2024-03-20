@@ -164,3 +164,9 @@
   }
   
 })();
+
+let scrollDownButton = document.getElementById('scroll-down')
+scrollDownButton.addEventListener('click', () => {
+  console.log("clicked")
+  window.scrollBy(0, 300);
+})

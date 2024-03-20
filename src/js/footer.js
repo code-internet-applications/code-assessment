@@ -110,6 +110,5 @@ clickable4.addEventListener("click", () => {
     accordion4Content.style.display = "block";
   } else {
     accordion4Content.style.display = "none";
-
   }
 });
