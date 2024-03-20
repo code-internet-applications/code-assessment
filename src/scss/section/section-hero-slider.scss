@@ -158,9 +158,13 @@
 }
 
 
-.slider-heading {
+.custom-heading {
   font-size: 2rem;
   line-height: 2rem;
+  @media screen and (min-width: 500px) {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
   @media screen and (min-width: 768px) {
     font-size: 4rem;
     line-height: 4rem;
@@ -190,9 +194,9 @@
 }
 
 .custom-button {
-  font-size: 1rem;
-  line-height: 1rem;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
   @media screen and (min-width: 768px) {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
