@@ -1,6 +1,11 @@
 @use '../mixins'as *;
 .usp {
   text-align: center;
+  .usp__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   .container {
     padding-top: rem(60);
     padding-bottom: rem(80);
