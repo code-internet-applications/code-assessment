@@ -1,6 +1,11 @@
 @use '../mixins'as *;
 
 .footer {
+  .footer-block--menu__item {
+    .footer-block--menu__list {
+      display: none;
+    }
+  }
   background: var(--color-brand-background);
   color: var(--color-brand-text);
   padding-top: rem(87);

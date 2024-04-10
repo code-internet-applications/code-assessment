@@ -1798,13 +1798,14 @@
         <div class="site-center site-center--compact site-side-spacing">
           <div class="is-grid has-no-row-gap footer__blocks">
             <div class="is-col-12 is-col-9-lg footer-block footer-block--menu">
+              <footer-collapse>
               <div class="collapsible">
                 <ul class="footer-block--menu__list footer-block--menu__list level-1">
-                  <li class="footer-block--menu__item level-1">
+                  <li class="footer-block--menu__item level-1 forloop-index--1">
                     <div class="footer-block--menu__link level-1 focus-inset">
                       <span>About</span>
                     </div>
-                    <ul class="footer-block--menu__list level-2 motion-reduce" tabindex="-1">
+                    <ul class="footer-block--menu__list level-2 motion-reduce forloop-index--1" tabindex="-1">
                       <li class="footer-block--menu__item level-2">
                         <a href="#" class="footer-block--menu__link level-2 focus-inset">Journal</a>
                       </li>
@@ -1825,11 +1826,11 @@
                       </li>
                     </ul>
                   </li>
-                  <li class="footer-block--menu__item level-1">
+                  <li class="footer-block--menu__item level-1 forloop-index--2">
                     <div class="footer-block--menu__link level-1 focus-inset">
                       <span>Info</span>
                     </div>
-                    <ul class="footer-block--menu__list level-2 motion-reduce" tabindex="-1">
+                    <ul class="footer-block--menu__list level-2 motion-reduce forloop-index--2" tabindex="-1">
                       <li class="footer-block--menu__item level-2">
                         <a href="#" class="footer-block--menu__link level-2 focus-inset">Business</a>
                       </li>
@@ -1850,11 +1851,11 @@
                       </li>
                     </ul>
                   </li>
-                  <li class="footer-block--menu__item level-1">
+                  <li class="footer-block--menu__item level-1 forloop-index--3">
                     <div class="footer-block--menu__link level-1 focus-inset">
                       <span>Products</span>
                     </div>
-                    <ul class="footer-block--menu__list level-2 motion-reduce" tabindex="-1">
+                    <ul class="footer-block--menu__list level-2 motion-reduce forloop-index--3" tabindex="-1">
                       <li class="footer-block--menu__item level-2">
                         <a href="#" class="footer-block--menu__link level-2 focus-inset">Ploov - Heating cushions</a>
                       </li>
@@ -1877,6 +1878,7 @@
                   </li>
                 </ul>
               </div>
+            </footer-collapse>
             </div>
             <div class="is-col-12 is-col-3-lg footer-block footer-block--newsletter">
               <p class="h4 footer-block__title">Newsletter</p>
@@ -2176,6 +2178,7 @@
 
       <!-- Footer scripts -->
       <script src="js/footer.js" defer></script>
+      <script src="js/footer-collapse.js" defer></script>
     </footer>
     
     <script>
