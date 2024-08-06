@@ -45,3 +45,14 @@ class CollapsibleFooter extends Collapsible {
 if (!customElements.get('collapsible-footer')) {
   customElements.define('collapsible-footer', CollapsibleFooter);
 }
+
+// Collapable footer menu
+const footerMenus = document.querySelectorAll('[data-footer-menu]')
+if(footerMenus && window.innerWidth < 768) {
+  footerMenus.forEach(item => {
+    item.addEventListener('click', () => {
+      let menuList = item.querySelector('ul')
+      menuList.classList.toggle('visibility-hidden')
+    })
+  })
+}
