@@ -709,6 +709,10 @@
               <div class="swiper swiper-container" data-swiper data-options='{
                 "speed": 750,
                   "loop":	true,
+                  "pagination": {
+                    "el": ".swiper-scroll-indicators--hero", 
+                    "clickable": true               
+                  },
                   "navigation": {
                     "nextEl": ".swiper-button-next-template--15853827948724__16929d1d-fb82-4a4d-b347-681a660c78f3",
                     "prevEl": ".swiper-button-prev-template--15853827948724__16929d1d-fb82-4a4d-b347-681a660c78f3"
@@ -742,11 +746,6 @@
                         </div>
                       </div>
                     </div>
-                    <div class="swiper-scroll-indicators is-flex is-directioned-column-reverse">
-                      <span class="swiper-scroll-indicator__indicator"></span>
-                      <span class="swiper-scroll-indicator__indicator"></span>
-                      <span class="swiper-scroll-indicator__indicator"></span>
-                    </div>
                   </div>
                   <div class="swiper-slide hero-slider__slide" data-swiper-slide-index="2">
                     <div class="hero-slider__image-wrapper">
@@ -771,11 +770,6 @@
                         </div>
                       </div>
                     </div>
-                    <div class="swiper-scroll-indicators is-flex is-directioned-column-reverse">
-                      <span class="swiper-scroll-indicator__indicator"></span>
-                      <span class="swiper-scroll-indicator__indicator"></span>
-                      <span class="swiper-scroll-indicator__indicator"></span>
-                    </div>
                   </div>
                 </div>
                 <div class="swiper-navigation site-center">
@@ -790,6 +784,7 @@
                     </svg>
                   </button>
                 </div>
+                <div class="swiper-scroll-indicators swiper-scroll-indicators--hero  site-center"></div>
               </div>
             </div>
           </div>

@@ -139,19 +139,18 @@
     span {
       width: rem(12);
       height: rem(12);
-      margin: rem(2) auto;
+      margin: rem(8) auto;
       background: var(--color-brand-primary);
       border-radius: 100%;
-      &:nth-of-type(2) {
-        width: rem(10);
-        height: rem(10);
-        opacity: 50%;
-      }
-      &:last-child {
-        width: rem(8);
-        height: rem(8);
-        opacity: 20%;
-      }
+
+    }
+
+    &--hero {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      gap: rem(8);
+      left: 50%;
     }
   }
 }

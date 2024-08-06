@@ -79,8 +79,6 @@
     transform: scale(1.5);
     transition-timing-function: ease-in;
     & + .swiper-pagination-bullet {
-      // original bullet is 8px, scale it to 10px
-      transform: scale(1.25);
     }
   }
 }
