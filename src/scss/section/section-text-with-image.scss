@@ -1,0 +1,32 @@
+@use '../mixins' as *;
+
+.text-with-image {
+    &__inner {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        @include mqmin($bp-lg) {
+            flex-direction: row-reverse;
+        }
+    }
+    &__image {
+
+        @include mqmin($bp-lg) {
+            flex-basis: 50%;
+        }
+        
+        figure {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    &__text {
+        padding: rem(16);
+        @include mqmin($bp-lg) {
+            flex-basis: 50%;
+            padding: rem(16) rem(32);
+        }
+    }
+}
