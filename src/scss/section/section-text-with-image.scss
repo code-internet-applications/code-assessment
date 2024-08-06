@@ -1,15 +1,6 @@
 @use '../mixins' as *;
 
 .text-with-image {
-    &__inner {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-
-        @include mqmin($bp-lg) {
-            flex-direction: row-reverse;
-        }
-    }
     &__image {
 
         @include mqmin($bp-lg) {
