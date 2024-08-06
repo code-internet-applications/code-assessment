@@ -23,7 +23,7 @@
         }
     }
     &__text {
-        padding: rem(16);
+        padding: rem(32);
         @include mqmin($bp-lg) {
             flex-basis: 50%;
             padding: rem(16) rem(32);
