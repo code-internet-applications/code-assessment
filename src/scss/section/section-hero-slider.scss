@@ -25,9 +25,9 @@
   &__content-wrapper {
     box-sizing: border-box;
     // padding left/right given to avoid overlap with the "swiper navigation arrows"
-    padding-block: 0 rem(100);
+    padding-block: rem(100);
     @include mqmin($bp-md) {
-      padding-block: 0 rem(102);
+      padding-block: rem(102);
       max-width: var(--site-center-narrow);
     }
     &.has-navigation {
@@ -130,9 +130,11 @@
   .swiper-scroll-indicators {
     position: absolute;
     z-index: 1;
-    left: 50%;
+    left: 50% !important;
     transform: translateX(-50%);
-    bottom: rem(32);
+    width: fit-content !important;
+    bottom: rem(32) !important;
+    align-items: center;
     @include mqmin($bp-lg) {
       bottom: rem(50);
     }
@@ -142,16 +144,16 @@
       margin: rem(2) auto;
       background: var(--color-brand-primary);
       border-radius: 100%;
-      &:nth-of-type(2) {
-        width: rem(10);
-        height: rem(10);
-        opacity: 50%;
-      }
-      &:last-child {
-        width: rem(8);
-        height: rem(8);
-        opacity: 20%;
-      }
+      // &:nth-of-type(2) {
+      //   width: rem(10);
+      //   height: rem(10);
+      //   opacity: 50%;
+      // }
+      // &:last-child {
+      //   width: rem(8);
+      //   height: rem(8);
+      //   opacity: 20%;
+      // }
     }
   }
 }
