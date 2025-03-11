@@ -133,6 +133,20 @@
         }
       }
     }
+    &__image--no-padding {
+      position: relative;
+      margin-bottom: 10%;
+      @include mqmin($bp-md) {
+        margin-bottom: 0;
+        margin-right: calc(-1* var(--site-side-spacing-md));
+      }
+      figure {
+        position: relative;
+        z-index: 2;
+        border-radius: 0;
+        margin-bottom: 0;
+      }
+    }
   }
 }
 

@@ -186,6 +186,13 @@
       list-style: none;
       padding: 0;
       margin: 0;
+      @include mqmax($bp-md) {
+        &.level-2:not(.active) {
+          display: none;
+        }
+        &.level-2.active {
+          display: block;
+      }}
       @include mqmin($bp-footer) {
         &.level-1 {
           display: grid;

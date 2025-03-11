@@ -45,3 +45,18 @@ class CollapsibleFooter extends Collapsible {
 if (!customElements.get('collapsible-footer')) {
   customElements.define('collapsible-footer', CollapsibleFooter);
 }
+
+document.addEventListener("DOMContentLoaded",function(){
+  document.querySelectorAll(".footer-block--menu__link.level-1").forEach(link => {
+    link.addEventListener("click", function(event){
+      event.preventDefault();
+      let parentLi = link.closest("li.level-1");
+      if(parentLi){
+        let subMenu = parentLi.querySelector("ul");
+        if (subMenu) {
+          subMenu.classList.toggle("active");
+        }
+      }
+    })
+  })
+})
