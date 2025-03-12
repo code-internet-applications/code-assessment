@@ -154,6 +154,16 @@ document.querySelectorAll('.prevent-hashjump').forEach((link) => {
   });
 });
 
+document.querySelectorAll('collapsible-li').forEach(item=> {
+  let heading = item.querySelector("h4");
+  let sublist = item.querySelector("ul");
+
+  heading.addEventListener("click", function (){
+    let isOpen = item.classList.toggle("open");
+    sublist.style.display = isOpen ? "block" : "none";
+  })
+})
+
 
 /*
  * Shopify Common JS
